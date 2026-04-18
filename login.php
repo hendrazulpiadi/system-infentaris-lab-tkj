@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Sistem Inventaris Lab TKJ</title>
+    <link rel="icon" type="image/png" href="img/logo-tkj.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -199,8 +200,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="login-container">
         <div class="card">
             <div class="header">
-                <h1>Lab Inventaris</h1>
-                <p>Silakan login untuk mengelola alat</p>
+                <div class="logo-box">
+                    <img src="img/logo-tkj.png" alt="Logo TKJ">
+                </div>
+                <h1>Inventaris Lab TKJ</h1>
+                <p>Aplikasi Pendataan Perangkat & Alur Barang</p>
             </div>
 
             <?php if ($error): ?>

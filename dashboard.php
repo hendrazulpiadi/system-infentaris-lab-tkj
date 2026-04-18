@@ -38,6 +38,7 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Sistem Inventaris Lab TKJ</title>
+    <link rel="icon" type="image/png" href="img/logo-tkj.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -253,8 +254,8 @@ try {
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="sidebar-header">
-            <i class="fas fa-microchip"></i>
-            <h2>Lab TKJ</h2>
+            <img src="img/logo-tkj.png" alt="Logo">
+            <h2>Inventaris Lab TKJ</h2>
         </div>
         <ul class="nav-menu">
             <li class="nav-item"><a href="dashboard.php" class="nav-link active"><i class="fas fa-home"></i> Dashboard</a></li>
