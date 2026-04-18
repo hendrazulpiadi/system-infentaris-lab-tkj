@@ -254,9 +254,9 @@ try {
         </div>
         <ul class="nav-menu">
             <li class="nav-item"><a href="dashboard.php" class="nav-link active"><i class="fas fa-home"></i> Dashboard</a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-box"></i> Inventaris</a></li>
+            <li class="nav-item"><a href="inventaris.php" class="nav-link"><i class="fas fa-box"></i> Inventaris</a></li>
             <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-history"></i> Riwayat Alur</a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-file-alt"></i> Laporan</a></li>
+            <li class="nav-item"><a href="laporan.php" class="nav-link"><i class="fas fa-file-alt"></i> Laporan</a></li>
             <?php if ($_SESSION['role'] === 'superadmin'): ?>
             <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-users-cog"></i> Manajemen User</a></li>
             <?php endif; ?>
