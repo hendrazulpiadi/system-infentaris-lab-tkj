@@ -77,19 +77,23 @@ try {
 
         .sidebar-header {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 10px;
+            gap: 15px;
             margin-bottom: 2.5rem;
+            text-align: center;
         }
 
-        .sidebar-header i {
-            font-size: 1.5rem;
-            color: var(--primary);
+        .sidebar-header img {
+            width: 80px;
+            height: auto;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
         }
 
         .sidebar-header h2 {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.25rem;
+            font-size: 1.1rem;
+            color: white;
         }
 
         .nav-menu {

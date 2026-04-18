@@ -50,10 +50,16 @@ function getStatusBadge($status) {
         body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text-dark); display: flex; }
 
         /* Sidebar reuse */
+        .sidebar-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+        .sidebar-header img { width: 80px; height: auto; }
         .sidebar { width: 260px; background-color: var(--sidebar); height: 100vh; position: fixed; color: white; padding: 1.5rem; display: flex; flex-direction: column; }
-        .sidebar-header { display: flex; align-items: center; gap: 10px; margin-bottom: 2.5rem; }
-        .sidebar-header i { font-size: 1.5rem; color: var(--primary); }
-        .sidebar-header h2 { font-family: 'Outfit', sans-serif; font-size: 1.25rem; }
         .nav-menu { list-style: none; flex-grow: 1; }
         .nav-link { display: flex; align-items: center; gap: 12px; padding: 0.8rem 1rem; color: #94a3b8; text-decoration: none; border-radius: 0.75rem; transition: all 0.2s; }
         .nav-link:hover, .nav-link.active { background-color: rgba(255, 255, 255, 0.1); color: white; }

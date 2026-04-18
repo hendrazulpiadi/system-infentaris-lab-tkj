@@ -79,7 +79,10 @@ $nama_bulan = [
 </head>
 <body>
     <div class="sidebar">
-        <h2 style="font-family: 'Outfit'; margin-bottom: 2rem;">Lab TKJ</h2>
+        <div style="text-align: center; margin-bottom: 2.5rem;">
+            <img src="img/logo smk alazhar.png" alt="Logo" style="width: 80px; height: auto; margin-bottom: 10px;">
+            <h2 style="font-family: 'Outfit'; font-size: 1.1rem; color: white;">Inventaris Lab TKJ</h2>
+        </div>
         <ul style="list-style: none;">
             <li style="margin-bottom: 0.5rem;"><a href="dashboard.php" style="color: #94a3b8; text-decoration: none; display: flex; align-items: center; gap: 10px; padding: 0.8rem;"><i class="fas fa-home"></i> Dashboard</a></li>
             <li style="margin-bottom: 0.5rem;"><a href="inventaris.php" style="color: #94a3b8; text-decoration: none; display: flex; align-items: center; gap: 10px; padding: 0.8rem;"><i class="fas fa-box"></i> Inventaris</a></li>
