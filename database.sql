@@ -40,4 +40,4 @@ CREATE TABLE IF NOT EXISTS log_status (
 -- Insert initial data (Superadmin: admin, Password: admin)
 -- Password hashed using password_hash('admin', PASSWORD_DEFAULT)
 INSERT INTO users (username, password, role, nama_lengkap) 
-VALUES ('admin', '$2y$10$vNf/D4Xy5M5W5F9uS1l.6.V6uE2Q7M6W9z.5Z/5z2zXz1zMz1zMz1', 'superadmin', 'Administrator Lab');
+VALUES ('admin', '$2y$10$oUBJshcenM/9POKsnZ96Jei167QAdTpTA0cpzbifIuL9pKVFV8E5y', 'superadmin', 'Administrator Lab');

@@ -34,6 +34,7 @@ function getStatusBadge($status) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventaris - Lab TKJ</title>
+    <link rel="icon" type="image/png" href="img/logo-tkj.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -50,10 +51,16 @@ function getStatusBadge($status) {
         body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text-dark); display: flex; }
 
         /* Sidebar reuse */
+        .sidebar-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+        .sidebar-header img { width: 80px; height: auto; }
         .sidebar { width: 260px; background-color: var(--sidebar); height: 100vh; position: fixed; color: white; padding: 1.5rem; display: flex; flex-direction: column; }
-        .sidebar-header { display: flex; align-items: center; gap: 10px; margin-bottom: 2.5rem; }
-        .sidebar-header i { font-size: 1.5rem; color: var(--primary); }
-        .sidebar-header h2 { font-family: 'Outfit', sans-serif; font-size: 1.25rem; }
         .nav-menu { list-style: none; flex-grow: 1; }
         .nav-link { display: flex; align-items: center; gap: 12px; padding: 0.8rem 1rem; color: #94a3b8; text-decoration: none; border-radius: 0.75rem; transition: all 0.2s; }
         .nav-link:hover, .nav-link.active { background-color: rgba(255, 255, 255, 0.1); color: white; }
@@ -83,7 +90,10 @@ function getStatusBadge($status) {
 </head>
 <body>
     <div class="sidebar">
-        <div class="sidebar-header"><i class="fas fa-microchip"></i><h2>Lab TKJ</h2></div>
+        <div class="sidebar-header">
+            <img src="img/logo-tkj.png" alt="Logo">
+            <h2 style="font-family: 'Outfit'; font-size: 1.1rem; color: white;">Inventaris Lab TKJ</h2>
+        </div>
         <ul class="nav-menu">
             <li class="nav-item"><a href="dashboard.php" class="nav-link"><i class="fas fa-home"></i> Dashboard</a></li>
             <li class="nav-item"><a href="inventaris.php" class="nav-link active"><i class="fas fa-box"></i> Inventaris</a></li>

@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Sistem Inventaris Lab TKJ</title>
+    <link rel="icon" type="image/png" href="img/logo-tkj.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -60,7 +61,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('img/bckground 2.jfif');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: var(--text);
             display: flex;
             align-items: center;
@@ -71,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         .login-container {
             width: 100%;
-            max-width: 400px;
+            max-width: 420px;
             padding: 2rem;
             animation: fadeIn 0.5s ease-out;
         }
@@ -82,12 +86,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         .card {
-            background-color: var(--card-bg);
+            background-color: rgba(30, 41, 59, 0.7);
             padding: 2.5rem;
-            border-radius: 1.5rem;
+            border-radius: 2rem;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
         }
 
         .header {
@@ -95,19 +100,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             margin-bottom: 2rem;
         }
 
+        .logo-box {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-box img {
+            height: 60px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+        }
+
         .header h1 {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.875rem;
+            font-size: 1.75rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
-            background: linear-gradient(to right, #818cf8, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: white;
+            letter-spacing: -0.025em;
         }
 
         .header p {
             color: var(--text-muted);
-            font-size: 0.875rem;
+            font-size: 0.9rem;
         }
 
         .form-group {
@@ -183,8 +200,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="login-container">
         <div class="card">
             <div class="header">
-                <h1>Lab Inventaris</h1>
-                <p>Silakan login untuk mengelola alat</p>
+                <div class="logo-box">
+                    <img src="img/logo-tkj.png" alt="Logo TKJ">
+                </div>
+                <h1>Inventaris Lab TKJ</h1>
+                <p>Aplikasi Pendataan Perangkat & Alur Barang</p>
             </div>
 
             <?php if ($error): ?>

@@ -38,6 +38,7 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Sistem Inventaris Lab TKJ</title>
+    <link rel="icon" type="image/png" href="img/logo-tkj.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -77,19 +78,23 @@ try {
 
         .sidebar-header {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 10px;
+            gap: 15px;
             margin-bottom: 2.5rem;
+            text-align: center;
         }
 
-        .sidebar-header i {
-            font-size: 1.5rem;
-            color: var(--primary);
+        .sidebar-header img {
+            width: 80px;
+            height: auto;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
         }
 
         .sidebar-header h2 {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.25rem;
+            font-size: 1.1rem;
+            color: white;
         }
 
         .nav-menu {
@@ -249,8 +254,8 @@ try {
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="sidebar-header">
-            <i class="fas fa-microchip"></i>
-            <h2>Lab TKJ</h2>
+            <img src="img/logo-tkj.png" alt="Logo">
+            <h2>Inventaris Lab TKJ</h2>
         </div>
         <ul class="nav-menu">
             <li class="nav-item"><a href="dashboard.php" class="nav-link active"><i class="fas fa-home"></i> Dashboard</a></li>
